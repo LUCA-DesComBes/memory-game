@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Memory-Game</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="menu-game">
+			<h1 class="heading-menu">memory</h1>
+			<form>
+				<label for="">
+					Select Theme
+					<div class="choice-r">
+						<button class="choice-btn active">Numbers</button>
+						<button class="choice-btn">Icons</button>
+					</div>
+				</label>
+				<label for="">
+					Numbers of Players
+					<div class="choice-r-player">
+						<button class="choice-btn-player active">1</button>
+						<button class="choice-btn-player">2</button>
+						<button class="choice-btn-player">3</button>
+						<button class="choice-btn-player">4</button>
+					</div>
+				</label>
+				<label for="">
+					Grid Size
+					<div class="choice-r">
+						<button class="choice-btn active">4x4</button>
+						<button class="choice-btn">6x6</button>
+					</div>
+				</label>
+				<button class="start">Start Game</button>
+			</form>
+		</div>
+		<div class="start-game">
+			<header>
+				<h1 class="header-heading">memory</h1>
+				<button class="menu-btn">Menu</button>
+				<div class="tablet-header">
+					<button class="restart">Restart</button>
+					<button class="new-game">New Game</button>
+				</div>
+			</header>
+			<main>
+				<div class="container">
+					<button class="memory-btn card-back">1</button>
+					<button class="memory-btn card-back">2</button>
+					<button class="memory-btn card-back">3</button>
+					<button class="memory-btn card-back">4</button>
+					<button class="memory-btn card-back">5</button>
+					<button class="memory-btn card-back">6</button>
+					<button class="memory-btn card-back">7</button>
+					<button class="memory-btn card-back">8</button>
+					<button class="memory-btn card-back">1</button>
+					<button class="memory-btn card-back">2</button>
+					<button class="memory-btn card-back">3</button>
+					<button class="memory-btn card-back">4</button>
+					<button class="memory-btn card-back">5</button>
+					<button class="memory-btn card-back">6</button>
+					<button class="memory-btn card-back">7</button>
+					<button class="memory-btn card-back">8</button>
+				</div>
+			</main>
+			<footer>
+				<div class="footer-row">
+					<div class="player-div">
+						<p class="player-para">P1</p>
+						<p class="score" id="score-one">4</p>
+					</div>
+					<div class="player-div active-player">
+						<p class="player-para">P2</p>
+						<p class="score" id="score-two">4</p>
+					</div>
+					<div class="player-div">
+						<p class="player-para">P3</p>
+						<p class="score" id="score-three">2</p>
+					</div>
+					<div class="player-div">
+						<p class="player-para">P4</p>
+						<p class="score" id="score-four">0</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+        <script src="main.js"></script>
+	</body>
+</html>

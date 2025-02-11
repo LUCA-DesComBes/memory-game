@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
+		<div class="opa" id="opa"></div>
 		<div class="menu-game">
 			<h1 class="heading-menu">memory</h1>
 			<form>
@@ -67,17 +68,17 @@
 			</main>
 			<footer>
 				<div class="footer-row">
-					<div class="player-div">
-						<p class="player-para">P1</p>
-						<p class="score" id="score-one">4</p>
-					</div>
 					<div class="player-div active-player">
+						<p class="player-para">P1</p>
+						<p class="score" id="score-one">0</p>
+					</div>
+					<div class="player-div">
 						<p class="player-para">P2</p>
-						<p class="score" id="score-two">4</p>
+						<p class="score" id="score-two">0</p>
 					</div>
 					<div class="player-div">
 						<p class="player-para">P3</p>
-						<p class="score" id="score-three">2</p>
+						<p class="score" id="score-three">0</p>
 					</div>
 					<div class="player-div">
 						<p class="player-para">P4</p>
@@ -86,6 +87,32 @@
 				</div>
 			</footer>
 		</div>
+		<section class="win-sect" id="win-sect">
+			<span class="player-win">Player 3 Wins!</span>
+			<p class="game-over">Game over! Here are the results…</p>
+			<div class="classement">
+				<div class="player-classement win-div">
+					<p class="win-para win"><span class="player-span-win">Player 3</span> (Winner!)</p>
+					<p class="paire-para-win"><span class="score-paire win">8 </span>Pairs</p>
+				</div>
+				<div class="player-classement">
+					<span class="player-span">Player 1</span>
+					<p class="paire-para"><span class="score-paire">4 </span>Pairs</p>
+				</div>
+				<div class="player-classement">
+					<span class="player-span">Player 2</span>
+					<p class="paire-para"><span class="score-paire">3 </span>Pairs</p>
+				</div>
+				<div class="player-classement">
+					<span class="player-span">Player 4</span>
+					<p class="paire-para"><span class="score-paire">1 </span>Pairs</p>
+				</div>
+			</div>
+			<div class="btn-win-div">
+				<button class="restart-win" id="restart-win">Restart</button>
+				<button class="new-game-win">Setup New Game</button>
+			</div>
+		</section>
         <script src="main.js"></script>
 	</body>
 </html>

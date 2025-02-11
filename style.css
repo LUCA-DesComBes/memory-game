@@ -176,6 +176,16 @@ footer {
     display: none;
 }
 
+.flipped {
+    background-color: #BCCED9;
+    color: #FCFCFC;
+}
+
+.trouver {
+    background-color: #FDA214;
+    color: #FCFCFC;
+}
+
 @media screen and (min-width: 376px) {
     form {
         width: 60%;

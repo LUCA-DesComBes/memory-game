@@ -139,7 +139,7 @@ main {
 }
 .card-back {
     color: #304859;
-    background-color: #304859;
+    background-color: #000;
 }
 footer {
     display: flex;
@@ -147,7 +147,7 @@ footer {
     height: 100%;
 }
 .footer-row {
-    display: flex;
+    display: none;
     flex-direction: row;
     width: 100%;
     gap: 24px;
@@ -301,6 +301,54 @@ footer {
     background-color: #DFE7EC;
     color: #304859;
 }
+.footer-row-solo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 25px;
+}
+.player-div-solo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0 9px 0;    
+    border-radius: 5px;
+    background-color: #DFE7EC;
+    width: 50%;
+}
+.times, .moves {
+    color: #7191A5;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 2px;
+}
+.span-times, .span-moves {
+    color: #304859;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.win-sect-solo {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px 24px 24px 24px;
+    background-color: #fff;
+    position: absolute;
+    top: 25%; 
+    left: 5%;
+    width: 90%;
+    z-index: 3;
+    border-radius: 10px;
+}
+.youdid {
+    color: #152938;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 @media screen and (min-width: 376px) {
     form {
         width: 60%;
